@@ -1,8 +1,8 @@
 {
-  "name": "kashifmehmooddd.github.io",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kashifmehmooddd.github.io/portfolio",
+  "homepage": "https://kashifmehmooddd.github.io/Portfolio",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.7.0",
