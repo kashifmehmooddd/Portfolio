@@ -1,7 +1,6 @@
 import './About.scss'
 import AnimatedWord from './AnimatedWord'
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -20,26 +19,17 @@ const About = () => {
             <AnimatedWord letterClass={letterClass} strArray={['ME']} />
           </h1>
           <p className="fs-4">
-            Hello there, I'm Kashif Mehmood, a Full-Stack Developer equipped
-            with a broad range of technical proficiencies including Django, Ruby
-            on Rails, Node.js, Express, as well as SQL and No-SQL Databases. My
-            academic background lies in Computer Science, where I discovered my
-            natural affinity for programming. It resonated with me profoundly,
-            feeling almost like unraveling a complex game. This passion for
-            problem-solving seamlessly extended into my interest in esports.
+            I'm Kashif Mehmood, a Backend-Focused Full-Stack Engineer with a passion for building scalable, high-performance systems. My expertise lies in architecting robust backend solutions, designing efficient APIs, and implementing cloud-native infrastructure that powers modern applications.
           </p>
           <p className="fs-4">
-            Im currently a Software Engineer at the company named Devsinc, a
-            company I joined immediately after graduating in 2022. Prior to
-            this, I engaged in freelancing as a web developer, primarily
-            focusing on JavaScript frameworks. Transitioning to a
-            service-oriented company has been instrumental in honing my
-            adaptability to various technologies, tailored to meet client
-            specifications. Over the past two years, I've expanded my skill set
-            by working across multiple stacks, resulting in a versatile
-            technical aptitude.
+            With deep proficiency in <strong>Python, Ruby on Rails, Node.js</strong>, and database technologies like <strong>PostgreSQL, MongoDB, and Redis</strong>, I specialize in creating backend systems that handle complex business logic and scale seamlessly. On the frontend, I excel with <strong>React, TypeScript, Vue.js</strong>, and modern CSS frameworks like <strong>Tailwind CSS, Bootstrap, and Sass</strong>, delivering responsive and intuitive user experiences.
           </p>
-          <h2></h2>
+          <p className="fs-4">
+            My cloud infrastructure expertise with <strong>AWS, Docker, and CI/CD pipelines</strong> ensures reliable, automated deployments and infrastructure management. Currently serving as a Software Engineer at <strong>Devsinc</strong> since 2022, I've successfully delivered enterprise-grade applications including healthcare platforms, influencer management systems, and real-time communication tools.
+          </p>
+          <p className="fs-4">
+            I thrive on solving complex technical challenges, from designing microservices architectures to optimizing database queries and implementing security best practices. My goal is to build technology that not only meets today's requirements but anticipates tomorrow's growth.
+          </p>
         </div>
 
         {/*=== SELF PORTRAIT === */}
@@ -47,11 +37,20 @@ const About = () => {
           id="imgwrapper"
           className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  "
         >
-          {/* <img
-            alt="profilepicture"
-            className="d-flex"
-            src=""
-          /> */}
+          <div className="tech-highlights">
+            <div className="highlight-item">
+              <span className="highlight-number">3+</span>
+              <span className="highlight-text">Years Experience</span>
+            </div>
+            <div className="highlight-item">
+              <span className="highlight-number">15+</span>
+              <span className="highlight-text">Technologies Mastered</span>
+            </div>
+            <div className="highlight-item">
+              <span className="highlight-number">∞</span>
+              <span className="highlight-text">Problems Solved</span>
+            </div>
+          </div>
         </div>
       </div>
     </>

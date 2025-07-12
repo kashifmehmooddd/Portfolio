@@ -4,14 +4,14 @@
   }
   /* Track */
   ::-webkit-scrollbar-track {
-    background: none; 
+    background: none;
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #cccccc; 
+    background: #cccccc;
   }
  #projects-page{
-  height: 100vh; 
+  height: 100vh;
   overflow-y: scroll;
     img{
       aspect-ratio: 19/9;
@@ -26,6 +26,62 @@
         transition: all 0.3s ease;
         &:hover{
           transform: scale(1.06);
+        }
+    }
+
+    .backend-project{
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        border: 1px solid rgba(111, 255, 233, 0.3);
+
+        .project-header{
+            padding: 1.5rem 1.5rem 1rem;
+            border-bottom: 1px solid rgba(111, 255, 233, 0.2);
+
+            .card-title{
+                color: #6fffe9;
+                margin-bottom: 1rem;
+                font-size: 1.25rem;
+            }
+
+            .tech-stack{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                .tech-tag{
+                    background: rgba(111, 255, 233, 0.1);
+                    border: 1px solid rgba(111, 255, 233, 0.3);
+                    color: #6fffe9;
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 4px;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    font-family: 'Raleway';
+                }
+            }
+        }
+
+        .card-body{
+            padding: 1.5rem;
+
+            .project-features{
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+                .feature{
+                    color: #cccccc;
+                    font-size: 0.9rem;
+                    margin-bottom: 0.5rem;
+                    font-family: 'Raleway';
+                }
+            }
+        }
+
+        &:hover{
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(111, 255, 233, 0.2);
+            border-color: rgba(111, 255, 233, 0.5);
         }
     }
     .card-title{
@@ -49,16 +105,16 @@
     }
  }
 @media only screen and (width < 576px){
-  
+
 ::-webkit-scrollbar {
   width: 0px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: none; 
+  background: none;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: white; 
+  background: white;
 }
 }

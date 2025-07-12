@@ -28,7 +28,13 @@ const Home = () => {
           &nbsp;
           <AnimatedWord letterClass={letterClass} strArray={lastName} />
         </h1>
-        <h2 className="mt-sm-2 mt-lg-3 display-6">Full-Stack Developer</h2>
+        <h2 className="mt-sm-2 mt-lg-3 display-6">Backend-Focused Full-Stack Engineer</h2>
+        <p className="tech-stack-preview mt-2">
+          <span className="tech-highlight">Python</span> • <span className="tech-highlight">Ruby on Rails</span> • <span className="tech-highlight">Node.js</span> • <span className="tech-highlight">React</span> • <span className="tech-highlight">TypeScript</span> • <span className="tech-highlight">PostgreSQL</span> • <span className="tech-highlight">AWS</span>
+        </p>
+        <p className="specialty-text mt-3">
+          Specializing in scalable backend systems, API architecture, and cloud infrastructure
+        </p>
         <div className="d-flex">
           <Link to="/contact" className="flat-button mt-2 mt-sm-3 mt-lg-4 fs-4">
             CONTACT ME
@@ -37,6 +43,7 @@ const Home = () => {
             href={Resume}
             className="view-resume mt-2 mt-sm-3 mt-lg-4 fs-4"
             target="_blank"
+            rel="noreferrer"
           >
             VIEW RESUME
           </a>
@@ -51,8 +58,9 @@ const Home = () => {
         <img
           className="planet mw-100 px-lg-3 "
           src="https://ucarecdn.com/9de76d9e-7029-4465-a820-a910fdf26065/-/preview/-/quality/smart/-/format/auto/"
+          alt="Planet illustration"
         ></img>
-        <img className="rocketship " src={Rocket}></img>
+        <img className="rocketship " src={Rocket} alt="Rocket ship"></img>
       </div>
     </div>
   )

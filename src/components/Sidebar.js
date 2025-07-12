@@ -1,16 +1,16 @@
 import './Sidebar.scss'
 import { Link, NavLink } from 'react-router-dom'
 import {
-  Briefcase,
-  GitHub,
-  Home,
-  Linkedin,
-  Mail,
-  Menu,
-  MessageSquare,
-  Tool,
-  User,
-} from 'react-feather'
+  FaBriefcase,
+  FaGithub,
+  FaHome,
+  FaLinkedin,
+  FaEnvelope,
+  FaBars,
+  FaComments,
+  FaTools,
+  FaUser,
+} from 'react-icons/fa'
 import Logo from '../assets/images/logo.png'
 import { useState } from 'react'
 
@@ -22,9 +22,9 @@ const Sidebar = () => {
     <>
       {/*=== Toggler only for mobile view  === */}
       <div className="toggler">
-        <a href="#" onClick={() => setToggleMenu(!toggleMenu)}>
-          <Menu size="20" color="#6fffe9" />
-        </a>
+        <button onClick={() => setToggleMenu(!toggleMenu)} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+          <FaBars size="20" color="#6fffe9" />
+        </button>
       </div>
       <div
         className={` ${toggleMenu ? 'wrapper' : null} h-100`}
@@ -37,7 +37,7 @@ const Sidebar = () => {
           } d-flex flex-column justify-content-between gap-4   bg-black py-4 h-100`}
         >
           <Link id="logo-wrapper" className="d-flex " to="/">
-            <img id="logo" src={Logo} />
+            <img id="logo" src={Logo} alt="Logo" />
             <span>Kashif Mehmood</span>
           </Link>
 
@@ -50,7 +50,7 @@ const Sidebar = () => {
               className={`${classNameFunc} d-flex gap-5`}
               to="/"
             >
-              <Home size="30" />
+              <FaHome size="30" />
               <span>Home</span>
             </NavLink>
             <NavLink
@@ -60,7 +60,7 @@ const Sidebar = () => {
               className={`${classNameFunc} d-flex gap-5`}
               to="/about"
             >
-              <User size="30" />
+              <FaUser size="30" />
               <span>About Me</span>
             </NavLink>
             <NavLink
@@ -70,7 +70,7 @@ const Sidebar = () => {
               className={`${classNameFunc} d-flex gap-5`}
               to="/projects"
             >
-              <Briefcase size="30" />
+              <FaBriefcase size="30" />
               <span>Projects</span>
             </NavLink>
             <NavLink
@@ -80,7 +80,7 @@ const Sidebar = () => {
               className={`${classNameFunc} d-flex gap-5`}
               to="/skills"
             >
-              <Tool size="30" />
+              <FaTools size="30" />
               <span>Skills</span>
             </NavLink>
             <NavLink
@@ -90,7 +90,7 @@ const Sidebar = () => {
               className={`${classNameFunc} d-flex gap-5`}
               to="/contact"
             >
-              <MessageSquare size="30" />
+              <FaComments size="30" />
               <span>Contact</span>
             </NavLink>
           </nav>
@@ -100,31 +100,31 @@ const Sidebar = () => {
             <li>
               <a
                 target="_blank"
-                rel="norefferer"
+                rel="noreferrer"
                 title="LinkedIn"
                 href="https://www.linkedin.com/in/kashif-mehmood-892b6a227/"
               >
-                <Linkedin size="20" />
+                <FaLinkedin size="20" />
               </a>
             </li>
             <li>
               <a
                 target="_blank"
-                rel="norefferer"
+                rel="noreferrer"
                 title="Github"
                 href="https://github.com/kashifmehmooddd"
               >
-                <GitHub size="20" />
+                <FaGithub size="20" />
               </a>
             </li>
             <li>
               <a
                 target="_blank"
-                rel="norefferer"
+                rel="noreferrer"
                 title="Email"
                 href="mailto:mehmoodkashif3054@gmail.com"
               >
-                <Mail size="20" />
+                <FaEnvelope size="20" />
               </a>
             </li>
           </ul>

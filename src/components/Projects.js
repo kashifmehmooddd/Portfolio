@@ -17,9 +17,9 @@ const Projects = () => {
           <h1 className="display-3">
             <AnimatedWord letterClass={letterClass} strArray={['MY']} />
             &nbsp;
-            <AnimatedWord letterClass={letterClass} strArray={['WORK']} />
+            <AnimatedWord letterClass={letterClass} strArray={['PROJECTS']} />
           </h1>
-          <p className="fs-4">A collection of some of my projects.</p>
+          <p className="fs-4">Backend-focused full-stack applications and system architecture</p>
         </div>
 
         {/*=== PROJECTS CARDS === */}
@@ -28,6 +28,172 @@ const Projects = () => {
           className="col-11 h-50 d-flex flex-column justify-contend-end"
         >
           <div className="row row-cols-1 row-cols-md-3 g-4">
+            {/* Real Projects */}
+            <div className="col d-flex align-items-stretch">
+              <div className="card backend-project">
+                <div className="project-header">
+                  <h3 className="card-title">Modern Animal</h3>
+                  <div className="tech-stack">
+                    <span className="tech-tag">Django</span>
+                    <span className="tech-tag">React</span>
+                    <span className="tech-tag">TypeScript</span>
+                    <span className="tech-tag">GraphQL</span>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="card-text fs-5">
+                    Worked as a full-stack engineer implementing a module to automate the process of storing previous medical history of patients via AI model and OCR. Also worked on multiple tickets as maintenance for this veterinary platform.
+                  </p>
+                  <div className="project-features">
+                    <div className="feature">• AI Model Integration</div>
+                    <div className="feature">• OCR Implementation</div>
+                    <div className="feature">• Medical Data Processing</div>
+                    <div className="feature">• Full-stack Development</div>
+                  </div>
+                </div>
+                <div className="card-footer">
+                  <a href="https://modernanimal.com/" target="_blank" rel="noreferrer">
+                    <button className="livebtn btn fs-5">Live Demo</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col d-flex align-items-stretch">
+              <div className="card backend-project">
+                <div className="project-header">
+                  <h3 className="card-title">YouSound</h3>
+                  <div className="tech-stack">
+                    <span className="tech-tag">Ruby on Rails</span>
+                    <span className="tech-tag">Vue.js</span>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="card-text fs-5">
+                    Handling this project and mostly refactoring this project for the betterment. This is basically a competitor platform for Spotify with music streaming capabilities and user management features.
+                  </p>
+                  <div className="project-features">
+                    <div className="feature">• Code Refactoring</div>
+                    <div className="feature">• Music Streaming</div>
+                    <div className="feature">• User Management</div>
+                    <div className="feature">• Platform Optimization</div>
+                  </div>
+                </div>
+                <div className="card-footer">
+                  <a href="https://yousound.com/" target="_blank" rel="noreferrer">
+                    <button className="livebtn btn fs-5">Live Demo</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col d-flex align-items-stretch">
+              <div className="card backend-project">
+                <div className="project-header">
+                  <h3 className="card-title">Gen-Con</h3>
+                  <div className="tech-stack">
+                    <span className="tech-tag">Ruby on Rails</span>
+                    <span className="tech-tag">React</span>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="card-text fs-5">
+                    Gen-Con is the largest tabletop game convention in North America by both attendance and number of events. Features traditional pen-and-paper, board, and card games, including role-playing games, miniatures wargames, live action role-playing games, collectible card games, and strategy games. Worked as a software engineer for their web app product operations regarding conventions.
+                  </p>
+                  <div className="project-features">
+                    <div className="feature">• Convention Management</div>
+                    <div className="feature">• Event Registration</div>
+                    <div className="feature">• User Operations</div>
+                    <div className="feature">• Large Scale Platform</div>
+                  </div>
+                </div>
+                <div className="card-footer">
+                  <a href="https://www.gencon.com/" target="_blank" rel="noreferrer">
+                    <button className="livebtn btn fs-5">Live Demo</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col d-flex align-items-stretch">
+              <div className="card backend-project">
+                <div className="project-header">
+                  <h3 className="card-title">Specialite</h3>
+                  <div className="tech-stack">
+                    <span className="tech-tag">React.js</span>
+                    <span className="tech-tag">Firebase</span>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="card-text fs-5">
+                    Initiated and implemented the public registration process for restaurants to join the app, allowing them to manage orders, confirm orders, and add dishes through a web app dashboard. Additionally, created a centralized project dashboard for processing registrations and monitoring all orders and restaurants.
+                  </p>
+                  <div className="project-features">
+                    <div className="feature">• Restaurant Management</div>
+                    <div className="feature">• Order Processing</div>
+                    <div className="feature">• Real-time Monitoring</div>
+                    <div className="feature">• Centralized Dashboard</div>
+                  </div>
+                </div>
+                <div className="card-footer">
+                  <button className="livebtn btn fs-5" disabled>Private Project</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="col d-flex align-items-stretch">
+              <div className="card backend-project">
+                <div className="project-header">
+                  <h3 className="card-title">Park-Guard</h3>
+                  <div className="tech-stack">
+                    <span className="tech-tag">Database Management</span>
+                    <span className="tech-tag">Web Portal</span>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="card-text fs-5">
+                    Led the development of a centralized database management system (DBMS) for a parking insurance coverage organization, enabling seamless collaboration with partner companies. The system provides customizable online claim forms that partners can distribute to customers. Built a comprehensive partner portal for real-time monitoring and management of claim submissions, enhancing operational efficiency and user experience.
+                  </p>
+                  <div className="project-features">
+                    <div className="feature">• Database Management System</div>
+                    <div className="feature">• Partner Collaboration</div>
+                    <div className="feature">• Customizable Forms</div>
+                    <div className="feature">• Real-time Monitoring</div>
+                  </div>
+                </div>
+                <div className="card-footer">
+                  <button className="livebtn btn fs-5" disabled>Enterprise Project</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="col d-flex align-items-stretch">
+              <div className="card backend-project">
+                <div className="project-header">
+                  <h3 className="card-title">Daycare APP</h3>
+                  <div className="tech-stack">
+                    <span className="tech-tag">Flutter</span>
+                    <span className="tech-tag">Mobile Development</span>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <p className="card-text fs-5">
+                    Designed and built a mobile application based on Flutter for daycare management, providing comprehensive tools for managing children, staff, and daily operations in daycare facilities.
+                  </p>
+                  <div className="project-features">
+                    <div className="feature">• Mobile Application</div>
+                    <div className="feature">• Flutter Development</div>
+                    <div className="feature">• Daycare Management</div>
+                    <div className="feature">• Operations Management</div>
+                  </div>
+                </div>
+                <div className="card-footer">
+                  <button className="livebtn btn fs-5" disabled>Private Project</button>
+                </div>
+              </div>
+            </div>
+
+            {/* Existing projects */}
             <div className="col d-flex align-items-stretch">
               <div className="card">
                 <img
@@ -46,7 +212,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://assemble.fyi/" target="_blank">
+                  <a href="https://assemble.fyi/" target="_blank" rel="noreferrer">
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
                 </div>
@@ -77,7 +243,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://supportlinc.com/" target="_blank">
+                  <a href="https://supportlinc.com/" target="_blank" rel="noreferrer">
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
                 </div>
@@ -98,7 +264,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://nebulachatapp.web.app" target="_blank">
+                  <a href="https://nebulachatapp.web.app" target="_blank" rel="noreferrer">
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
                 </div>
@@ -122,6 +288,7 @@ const Projects = () => {
                   <a
                     href="kashifmehmooddd.github.io/react-weather-app/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
@@ -143,7 +310,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="https://memoed-73535.web.app/" target="_blank">
+                  <a href="https://memoed-73535.web.app/" target="_blank" rel="noreferrer">
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
                 </div>
@@ -166,7 +333,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="card-footer">
-                  <a href="http://luxescope.byethost22.com" target="_blank">
+                  <a href="http://luxescope.byethost22.com" target="_blank" rel="noreferrer">
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
                 </div>
@@ -189,6 +356,7 @@ const Projects = () => {
                   <a
                     href="https://kashifmehmooddd.github.io/travel-landing-page/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>
@@ -197,7 +365,7 @@ const Projects = () => {
             </div>
             <div className="col d-flex align-items-stretch">
               <div className="card">
-                <img src="https://ucarecdn.com/b60bef1d-2a16-4bf7-9aad-ddb4b3fc18e1/-/preview/-/quality/smart/-/format/auto/" />
+                <img src="https://ucarecdn.com/b60bef1d-2a16-4bf7-9aad-ddb4b3fc18e1/-/preview/-/quality/smart/-/format/auto/" alt="Quiz App" />
                 <div className="card-body">
                   <h3 className="card-title">Quiz App</h3>
                   <p className="card-text fs-5">
@@ -208,6 +376,7 @@ const Projects = () => {
                   <a
                     href="https://kashifmehmooddd.github.io/quiztoit-app"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button className="livebtn btn fs-5">Live Demo</button>
                   </a>

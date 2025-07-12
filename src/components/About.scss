@@ -2,6 +2,49 @@
     img{
         max-width: 80%;
     }
+
+    .tech-highlights{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        animation: fadeInRight 1.5s 2.6s backwards;
+
+        .highlight-item{
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 16px;
+            background: rgba(111, 255, 233, 0.1);
+            border: 1px solid rgba(111, 255, 233, 0.3);
+            min-width: 200px;
+            transition: all 0.3s ease;
+
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(111, 255, 233, 0.2);
+                background: rgba(111, 255, 233, 0.15);
+            }
+
+            .highlight-number{
+                display: block;
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: #6fffe9;
+                font-family: 'Oswald', sans-serif;
+                margin-bottom: 0.5rem;
+            }
+
+            .highlight-text{
+                display: block;
+                font-size: 1rem;
+                color: #cccccc;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
 }
 @media only screen and (width >= 576px) {
     #about-page{

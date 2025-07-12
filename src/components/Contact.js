@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 import AnimatedWord from './AnimatedWord'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import './Contact.scss'
+
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const [statusMessage, setStatusMessage] = useState('')
@@ -101,6 +101,7 @@ const Contact = () => {
           <img
             className="spaceimg"
             src="https://ucarecdn.com/5d5e0874-d871-40e6-b9ab-2fe51d13372d/-/preview/-/quality/smart/-/format/auto/"
+            alt="Space illustration"
           ></img>
         </div>
       </div>
