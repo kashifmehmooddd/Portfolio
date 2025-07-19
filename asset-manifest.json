@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7e059cb2.css",
-    "main.js": "/Portfolio/static/js/main.cdf69477.js",
+    "main.css": "/Portfolio/static/css/main.5bb86d55.css",
+    "main.js": "/Portfolio/static/js/main.6c5bfd82.js",
     "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
     "static/media/sky1.jpg": "/Portfolio/static/media/sky1.a6cc71a59289ddfe4059.jpg",
     "static/media/Raleway-Regular.ttf": "/Portfolio/static/media/Raleway-Regular.c268e80ba67c4a294054.ttf",
@@ -12,12 +12,12 @@
     "static/media/logo.png": "/Portfolio/static/media/logo.649d846582560978d17e.png",
     "static/media/helvetica-neu.ttf": "/Portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "index.html": "/Portfolio/index.html",
-    "main.7e059cb2.css.map": "/Portfolio/static/css/main.7e059cb2.css.map",
-    "main.cdf69477.js.map": "/Portfolio/static/js/main.cdf69477.js.map",
+    "main.5bb86d55.css.map": "/Portfolio/static/css/main.5bb86d55.css.map",
+    "main.6c5bfd82.js.map": "/Portfolio/static/js/main.6c5bfd82.js.map",
     "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e059cb2.css",
-    "static/js/main.cdf69477.js"
+    "static/css/main.5bb86d55.css",
+    "static/js/main.6c5bfd82.js"
   ]
 }
