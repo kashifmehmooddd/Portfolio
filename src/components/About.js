@@ -10,7 +10,7 @@ const About = () => {
   }, [])
   return (
     <>
-      <div id="about-page" className="row h-100">
+      <div id="about-page" className="row min-vh-100">
         {/*=== PAGE TITLE AND DESCRIPTION === */}
         <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 order-2 order-sm-1 mb-auto mb-sm-0 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
           <h1 className="display-3">

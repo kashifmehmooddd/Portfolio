@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects-page" className="row">
+      <div id="projects-page" className="row min-vh-100">
         {/*=== PAGE TITLE AND DESCRIPTION === */}
         <div className="col-11  d-flex flex-column justify-content-end ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
           <h1 className="display-3">

@@ -97,8 +97,8 @@ const Skills = () => {
 
   return (
     <>
-      <div id="skills-page" className="container-fluid h-100">
-        <div className="row h-100 align-items-center">
+             <div id="skills-page" className="container-fluid min-vh-100">
+         <div className="row min-vh-100 align-items-center">
           {/* PAGE TITLE AND DESCRIPTION */}
           <div className="col-12 text-center mb-5">
             <h1 className='display-3 mb-4'>
