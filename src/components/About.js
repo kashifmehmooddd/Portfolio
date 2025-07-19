@@ -12,7 +12,7 @@ const About = () => {
     <>
       <div id="about-page" className="row min-vh-100">
         {/*=== PAGE TITLE AND DESCRIPTION === */}
-        <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 order-2 order-sm-1 mb-auto mb-sm-0 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
+        <div className="col-11 col-sm-6 col-md-7 col-lg-6 col-xl-6 order-1 order-sm-1 mb-auto mb-sm-0 d-flex flex-column justify-content-center ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
           <h1 className="display-3">
             <AnimatedWord letterClass={letterClass} strArray={['ABOUT']} />
             &nbsp;
@@ -35,7 +35,7 @@ const About = () => {
         {/*=== SELF PORTRAIT === */}
         <div
           id="imgwrapper"
-          className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-1 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  "
+          className="col-11 col-sm-6 col-md-5 col-lg-6 col-xl-5 order-2 order-sm-2 d-flex justify-content-center align-items-end align-items-sm-center justify-content-md-start justify-content-sm-center justify-content-lg-center  "
         >
           <div className="tech-highlights">
             <div className="highlight-item">

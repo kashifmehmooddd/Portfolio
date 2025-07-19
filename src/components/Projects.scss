@@ -11,8 +11,11 @@
     background: #cccccc;
   }
  #projects-page{
-  height: 100vh;
-  overflow-y: scroll;
+  min-height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
     img{
       aspect-ratio: 19/9;
     }
@@ -84,6 +87,38 @@
             border-color: rgba(111, 255, 233, 0.5);
         }
     }
+    .projects-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .projects-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 40px 0;
+    }
+
+    .projects-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #6fffe9;
+      font-family: 'Oswald';
+      line-height: 1.2;
+    }
+
+    .projects-subtitle {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+      font-family: 'Raleway';
+      margin: 0;
+    }
+
+    .projects-grid {
+      width: 100%;
+    }
+
     .card-title{
       font-family: 'Oswald';
     }

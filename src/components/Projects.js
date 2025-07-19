@@ -11,22 +11,19 @@ const Projects = () => {
 
   return (
     <>
-      <div id="projects-page" className="row min-vh-100">
+      <div id="projects-page" className="projects-container">
         {/*=== PAGE TITLE AND DESCRIPTION === */}
-        <div className="col-11  d-flex flex-column justify-content-end ps-sm-5 align-items-center text-center text-sm-start align-items-sm-start">
-          <h1 className="display-3">
+        <div className="projects-header">
+          <h1 className="projects-title">
             <AnimatedWord letterClass={letterClass} strArray={['MY']} />
             &nbsp;
             <AnimatedWord letterClass={letterClass} strArray={['PROJECTS']} />
           </h1>
-          <p className="fs-4">Backend-focused full-stack applications and system architecture</p>
+          <p className="projects-subtitle">Backend-focused full-stack applications and system architecture</p>
         </div>
 
         {/*=== PROJECTS CARDS === */}
-        <div
-          id="projectslist"
-          className="col-11 h-50 d-flex flex-column justify-contend-end"
-        >
+        <div className="projects-grid">
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {/* Real Projects */}
             <div className="col d-flex align-items-stretch">
